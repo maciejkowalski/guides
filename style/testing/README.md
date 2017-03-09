@@ -10,10 +10,13 @@ Testing
 * Use RSpec's [`allow` syntax] for method stubs.
 * Use `not_to` instead of `to_not` in RSpec expectations.
 * Prefer the `have_css` matcher to the `have_selector` matcher in Capybara assertions.
+* Use `-> { ... }` (lambda) when the expectation depends on the execution of a block
+  for clean separation of test phases. [Example][lambda-example]
 
 [`expect` syntax]: http://myronmars.to/n/dev-blog/2012/06/rspecs-new-expectation-syntax
 [`allow` syntax]: https://github.com/rspec/rspec-mocks#method-stubs
 [predicate-example]: predicate_tests_spec.rb
+[lambda-example]: use_lambda_spec.rb
 
 Acceptance Tests
 ----------------
